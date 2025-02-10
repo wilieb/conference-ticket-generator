@@ -14,7 +14,7 @@
 body {
     font-family: 'Inconsolate', monospace;
     background: url('../images/background-mobile.png') no-repeat center / cover;
-    height: fit-content;
+    min-height: 100vh;
 }
 
 body::before{
