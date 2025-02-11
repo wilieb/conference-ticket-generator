@@ -14,6 +14,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="./script.js" async></script>
 </head>
 <body>
   <div class="container">
@@ -25,13 +26,14 @@
 
     <form action="" method="post">
       <div class="form-div">
-        <label for="upload-container">Upload Avatar</label>
+        <label for="fileUpload">Upload Avatar</label>
         <div class="upload-container" id="upload-container">
+          <input type="file" id="fileUpload" class="file-input" accept="image/*" hidden>
           <span class="upload-box" id="dropZone">
             <div class="imgStyl">
               <img src="./assets/images/icon-upload.svg" alt="Upload Icon" class="upload-icon"> 
             </div>
-            <p>Drag & Drop files here or click to upload</p>
+            <p id="uploadText">Drag & Drop files here or click to upload</p>
           </span>
         </div>
       </div>
