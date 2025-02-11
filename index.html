@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,13 +24,20 @@
     </div>
 
     <form action="" method="post">
-      <div class="upload-container">
-          <label for="fileInput" class="upload-box" id="dropZone">
+      <label for="upload-container">Upload Avatar</label>
+      <div class="upload-container" id="upload-container">
+        <span class="upload-box" id="dropZone">
+          <div class="imgStyl">
             <img src="./assets/images/icon-upload.svg" alt="Upload Icon" class="upload-icon"> 
-            <span>Drag & Drop files here or <strong>Click to Upload</strong></span>
-            <input type="file" id="fileInput" multiple hidden>
-          </label>
-          <ul id="fileList"></ul> <!-- Uploaded file list -->
+          </div>
+          <p>Drag & Drop files here or click to upload</p>
+        </span>
+      </div>
+      <div class="info">
+        <small>
+          <img src="./assets/images/icon-info.svg" alt="">
+          <p>Upload your photo (JPG or PNG, max size: 500KB)</p>
+        </small>
       </div>
       
       <div class="form-div">
@@ -45,7 +52,7 @@
 
       <div  class="form-div">
         <label for="github">GitHub Username</label>
-        <input type="text" name="github" id="github" placeholder="@username">
+        <input type="text" name="github" id="github" placeholder="@yourusername">
       </div>
 
       <div class="form-div">
